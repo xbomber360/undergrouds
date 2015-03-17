@@ -14,6 +14,7 @@
 		D98B6A101AB1E5F700450C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A0F1AB1E5F700450C53 /* Images.xcassets */; };
 		D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A111AB1E5F700450C53 /* LaunchScreen.xib */; };
 		D98B6A1F1AB1E5F700450C53 /* UndergroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */; };
+		D9901AAC1AB76F7B00CF1444 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D9901AAB1AB76F7B00CF1444 /* Map.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D98B6A181AB1E5F700450C53 /* UndergroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndergroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B6A1D1AB1E5F700450C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergroundsTests.m; sourceTree = "<group>"; };
+		D9901AAA1AB76F7B00CF1444 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = Undergrounds/Map.h; sourceTree = "<group>"; };
+		D9901AAB1AB76F7B00CF1444 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = Undergrounds/Map.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		D98B69F61AB1E5F700450C53 = {
 			isa = PBXGroup;
 			children = (
+				D9901AAA1AB76F7B00CF1444 /* Map.h */,
+				D9901AAB1AB76F7B00CF1444 /* Map.m */,
 				D98B6A011AB1E5F700450C53 /* Undergrounds */,
 				D98B6A1B1AB1E5F700450C53 /* UndergroundsTests */,
 				D98B6A001AB1E5F700450C53 /* Products */,
@@ -221,6 +226,7 @@
 			files = (
 				D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */,
 				D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */,
+				D9901AAC1AB76F7B00CF1444 /* Map.m in Sources */,
 				D98B6A051AB1E5F700450C53 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +420,7 @@
 				D98B6A241AB1E5F700450C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D98B6A251AB1E5F700450C53 /* Build configuration list for PBXNativeTarget "UndergroundsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				D98B6A271AB1E5F700450C53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
