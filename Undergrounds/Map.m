@@ -9,6 +9,8 @@
 #import "Map.h"
 
 @implementation Map
+
+@synthesize citta;
     
 -(id) initMap: (NSString*)citta : (NSString*) stato : (NSString*) orario :  (NSString*) descrizione{
     if (self = [super init]) {
