@@ -14,7 +14,7 @@
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext; //si occupa di gestire come sono strutturate le entity
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel; //come l'oggetto facade in java serve per fare insert delete ecc
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator; // gestisce la connessione con il database
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator; /// gestisce la connessione con il database
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
