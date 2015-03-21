@@ -15,6 +15,8 @@
 		D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A111AB1E5F700450C53 /* LaunchScreen.xib */; };
 		D98B6A1F1AB1E5F700450C53 /* UndergroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */; };
 		D9901AAC1AB76F7B00CF1444 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D9901AAB1AB76F7B00CF1444 /* Map.m */; };
+		D998194F1ABD86F200A02AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998194E1ABD86F200A02AB9 /* CoreData.framework */; };
+		D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99819511ABD881700A02AB9 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergroundsTests.m; sourceTree = "<group>"; };
 		D9901AAA1AB76F7B00CF1444 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = Undergrounds/Map.h; sourceTree = "<group>"; };
 		D9901AAB1AB76F7B00CF1444 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = Undergrounds/Map.m; sourceTree = "<group>"; };
+		D998194E1ABD86F200A02AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D99819521ABD881700A02AB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D998194F1ABD86F200A02AB9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,11 +71,13 @@
 		D98B69F61AB1E5F700450C53 = {
 			isa = PBXGroup;
 			children = (
+				D99819511ABD881700A02AB9 /* Model.xcdatamodeld */,
 				D9901AAA1AB76F7B00CF1444 /* Map.h */,
 				D9901AAB1AB76F7B00CF1444 /* Map.m */,
 				D98B6A011AB1E5F700450C53 /* Undergrounds */,
 				D98B6A1B1AB1E5F700450C53 /* UndergroundsTests */,
 				D98B6A001AB1E5F700450C53 /* Products */,
+				D99819501ABD874700A02AB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +129,14 @@
 				D98B6A1D1AB1E5F700450C53 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D99819501ABD874700A02AB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D998194E1ABD86F200A02AB9 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +241,7 @@
 			files = (
 				D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */,
 				D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */,
+				D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */,
 				D9901AAC1AB76F7B00CF1444 /* Map.m in Sources */,
 				D98B6A051AB1E5F700450C53 /* main.m in Sources */,
 			);
@@ -432,6 +448,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D99819511ABD881700A02AB9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D99819521ABD881700A02AB9 /* Model.xcdatamodel */,
+			);
+			currentVersion = D99819521ABD881700A02AB9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D98B69F71AB1E5F700450C53 /* Project object */;
 }
