@@ -14,9 +14,12 @@
 		D98B6A101AB1E5F700450C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A0F1AB1E5F700450C53 /* Images.xcassets */; };
 		D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A111AB1E5F700450C53 /* LaunchScreen.xib */; };
 		D98B6A1F1AB1E5F700450C53 /* UndergroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */; };
-		D9901AAC1AB76F7B00CF1444 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = D9901AAB1AB76F7B00CF1444 /* Map.m */; };
 		D998194F1ABD86F200A02AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998194E1ABD86F200A02AB9 /* CoreData.framework */; };
 		D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99819511ABD881700A02AB9 /* Model.xcdatamodeld */; };
+		D9F1AB8B1ABF2A9700F64338 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB8A1ABF2A9700F64338 /* Categoria.m */; };
+		D9F1AB8E1ABF2A9800F64338 /* Mappa.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB8D1ABF2A9800F64338 /* Mappa.m */; };
+		D9F1AB911ABF2A9800F64338 /* Stato.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB901ABF2A9800F64338 /* Stato.m */; };
+		D9F1AB9B1ABF455C00F64338 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB9A1ABF455C00F64338 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +46,16 @@
 		D98B6A181AB1E5F700450C53 /* UndergroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndergroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B6A1D1AB1E5F700450C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergroundsTests.m; sourceTree = "<group>"; };
-		D9901AAA1AB76F7B00CF1444 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = Undergrounds/Map.h; sourceTree = "<group>"; };
-		D9901AAB1AB76F7B00CF1444 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = Undergrounds/Map.m; sourceTree = "<group>"; };
 		D998194E1ABD86F200A02AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D99819521ABD881700A02AB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D9F1AB891ABF2A9700F64338 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		D9F1AB8A1ABF2A9700F64338 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
+		D9F1AB8C1ABF2A9800F64338 /* Mappa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappa.h; sourceTree = "<group>"; };
+		D9F1AB8D1ABF2A9800F64338 /* Mappa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappa.m; sourceTree = "<group>"; };
+		D9F1AB8F1ABF2A9800F64338 /* Stato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stato.h; sourceTree = "<group>"; };
+		D9F1AB901ABF2A9800F64338 /* Stato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stato.m; sourceTree = "<group>"; };
+		D9F1AB991ABF455C00F64338 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		D9F1AB9A1ABF455C00F64338 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +81,12 @@
 			isa = PBXGroup;
 			children = (
 				D99819511ABD881700A02AB9 /* Model.xcdatamodeld */,
-				D9901AAA1AB76F7B00CF1444 /* Map.h */,
-				D9901AAB1AB76F7B00CF1444 /* Map.m */,
+				D9F1AB8F1ABF2A9800F64338 /* Stato.h */,
+				D9F1AB901ABF2A9800F64338 /* Stato.m */,
+				D9F1AB8C1ABF2A9800F64338 /* Mappa.h */,
+				D9F1AB8D1ABF2A9800F64338 /* Mappa.m */,
+				D9F1AB891ABF2A9700F64338 /* Categoria.h */,
+				D9F1AB8A1ABF2A9700F64338 /* Categoria.m */,
 				D98B6A011AB1E5F700450C53 /* Undergrounds */,
 				D98B6A1B1AB1E5F700450C53 /* UndergroundsTests */,
 				D98B6A001AB1E5F700450C53 /* Products */,
@@ -93,6 +106,8 @@
 		D98B6A011AB1E5F700450C53 /* Undergrounds */ = {
 			isa = PBXGroup;
 			children = (
+				D9F1AB991ABF455C00F64338 /* TableViewController.h */,
+				D9F1AB9A1ABF455C00F64338 /* TableViewController.m */,
 				D98B6A061AB1E5F700450C53 /* AppDelegate.h */,
 				D98B6A071AB1E5F700450C53 /* AppDelegate.m */,
 				D98B6A091AB1E5F700450C53 /* ViewController.h */,
@@ -241,9 +256,12 @@
 			files = (
 				D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */,
 				D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */,
+				D9F1AB8E1ABF2A9800F64338 /* Mappa.m in Sources */,
 				D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */,
-				D9901AAC1AB76F7B00CF1444 /* Map.m in Sources */,
+				D9F1AB8B1ABF2A9700F64338 /* Categoria.m in Sources */,
+				D9F1AB911ABF2A9800F64338 /* Stato.m in Sources */,
 				D98B6A051AB1E5F700450C53 /* main.m in Sources */,
+				D9F1AB9B1ABF455C00F64338 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
