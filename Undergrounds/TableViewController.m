@@ -7,6 +7,9 @@
 //
 
 #import "TableViewController.h"
+#import "Stato.h"
+#import "AppDelegate.h"
+
 
 @interface TableViewController ()
 
@@ -14,9 +17,30 @@
 
 @implementation TableViewController
 
+@synthesize managedObjectContext;
+@synthesize listaElementi;
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //NSFetchRequest *
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication
+                                            sharedApplication]delegate];
+    self.managedObjectContext = delegate.managedObjectContext;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Stato" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    self.listaElementi = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -33,26 +57,35 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    // CONTO IL NUMERO DEGLI ELEMENTI DELLA LISTA
+    return [listaElementi count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+   
+    static NSString *CellIdentifier = @"Cell"; //INSERIRE QUESTA RIGA
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+
     // Configure the cell...
-    
+    Stato *info = [ listaElementi objectAtIndex:indexPath.row];
+    cell.textLabel.text = info.nome;
+    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",
+                                // info.city, info.state];
+    NSLog(@"elemento %@", cell.textLabel.text);
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

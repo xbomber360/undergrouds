@@ -14,6 +14,7 @@
 		D98B6A101AB1E5F700450C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A0F1AB1E5F700450C53 /* Images.xcassets */; };
 		D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A111AB1E5F700450C53 /* LaunchScreen.xib */; };
 		D98B6A1F1AB1E5F700450C53 /* UndergroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */; };
+		D98CF18F1AC0228A00B04212 /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D98CF18E1AC0228A00B04212 /* Database.sqlite */; };
 		D998194F1ABD86F200A02AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998194E1ABD86F200A02AB9 /* CoreData.framework */; };
 		D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99819511ABD881700A02AB9 /* Model.xcdatamodeld */; };
 		D9F1AB8B1ABF2A9700F64338 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB8A1ABF2A9700F64338 /* Categoria.m */; };
@@ -46,6 +47,7 @@
 		D98B6A181AB1E5F700450C53 /* UndergroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndergroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B6A1D1AB1E5F700450C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergroundsTests.m; sourceTree = "<group>"; };
+		D98CF18E1AC0228A00B04212 /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
 		D998194E1ABD86F200A02AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D99819521ABD881700A02AB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D9F1AB891ABF2A9700F64338 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		D98B69F61AB1E5F700450C53 = {
 			isa = PBXGroup;
 			children = (
+				D98CF18E1AC0228A00B04212 /* Database.sqlite */,
 				D99819511ABD881700A02AB9 /* Model.xcdatamodeld */,
 				D9F1AB8F1ABF2A9800F64338 /* Stato.h */,
 				D9F1AB901ABF2A9800F64338 /* Stato.m */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98CF18F1AC0228A00B04212 /* Database.sqlite in Resources */,
 				D98B6A0E1AB1E5F700450C53 /* Main.storyboard in Resources */,
 				D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */,
 				D98B6A101AB1E5F700450C53 /* Images.xcassets in Resources */,

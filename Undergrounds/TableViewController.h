@@ -12,4 +12,7 @@
 
 @property(nonatomic,strong) NSArray *listaElementi;
 
+@property (readwrite, strong, nonatomic) NSManagedObjectContext *managedObjectContext; //si occupa di gestire come sono strutturate le entity
+
+
 @end
