@@ -11,6 +11,7 @@
 #import <CoreData/CoreData.h>
 #import "Mappa.h"
 #import "TableViewController.h"
+#import "ViewControllerVisualizzatore.h"
 
 
 
@@ -83,6 +84,18 @@
     return cell;
 }
 
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"VisualizzaElemento"]){
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow]; //PRENDO GLI INDICI
+        ViewControllerVisualizzatore *destViewController = segue.destinationViewController; //INIZIALIZZO IL NUOVO CONTROLLER
+        destViewController.mappaDaVisualizzare = [[listaElementi objectAtIndex:indexPath.row] file]; //COPIO L'ELEMENTO
+        //NEL NUOVO CONTROLLER
+    }//if
+
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -118,14 +131,7 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 
 @end

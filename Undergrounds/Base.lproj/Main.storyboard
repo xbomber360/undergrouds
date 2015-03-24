@@ -75,6 +75,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OvL-8F-2NK" id="PKm-E0-RsQ">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5iy-H2-vuL" kind="show" identifier="VisualizzaElemento" id="7NO-hz-fWb"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -86,7 +89,25 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsO-Ya-bip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2865" y="1389"/>
+            <point key="canvasLocation" x="2863" y="1389"/>
+        </scene>
+        <!--View Controller Visualizzatore-->
+        <scene sceneID="Jdi-je-KNp">
+            <objects>
+                <viewController id="5iy-H2-vuL" customClass="ViewControllerVisualizzatore" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bwa-vW-WYx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rRI-Bq-7Ae"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wlr-F3-YvA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AcR-W8-0hm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3605" y="1389"/>
         </scene>
         <!--Settings-->
         <scene sceneID="2JO-sz-RUv">

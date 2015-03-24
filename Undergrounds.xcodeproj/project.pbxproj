@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D94B973D1AC1BC0100755D2F /* Mappa.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B973C1AC1BC0100755D2F /* Mappa.m */; };
 		D94B97401AC1BD9900755D2F /* Stato.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B973F1AC1BD9900755D2F /* Stato.m */; };
+		D94B97431AC1C37900755D2F /* ViewControllerVisualizzatore.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B97421AC1C37900755D2F /* ViewControllerVisualizzatore.m */; };
 		D98B6A051AB1E5F700450C53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A041AB1E5F700450C53 /* main.m */; };
 		D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A071AB1E5F700450C53 /* AppDelegate.m */; };
 		D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A0A1AB1E5F700450C53 /* ViewController.m */; };
@@ -38,6 +39,8 @@
 		D94B973C1AC1BC0100755D2F /* Mappa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappa.m; sourceTree = "<group>"; };
 		D94B973E1AC1BD9900755D2F /* Stato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stato.h; sourceTree = "<group>"; };
 		D94B973F1AC1BD9900755D2F /* Stato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stato.m; sourceTree = "<group>"; };
+		D94B97411AC1C37900755D2F /* ViewControllerVisualizzatore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerVisualizzatore.h; sourceTree = "<group>"; };
+		D94B97421AC1C37900755D2F /* ViewControllerVisualizzatore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerVisualizzatore.m; sourceTree = "<group>"; };
 		D98B69FF1AB1E5F700450C53 /* Undergrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Undergrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B6A031AB1E5F700450C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98B6A041AB1E5F700450C53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 		D9B16E671AC0AA2B000B71C0 /* Grafica */ = {
 			isa = PBXGroup;
 			children = (
+				D94B97411AC1C37900755D2F /* ViewControllerVisualizzatore.h */,
+				D94B97421AC1C37900755D2F /* ViewControllerVisualizzatore.m */,
 				D98B6A091AB1E5F700450C53 /* ViewController.h */,
 				D98B6A0A1AB1E5F700450C53 /* ViewController.m */,
 				D9B16E621AC0A9EC000B71C0 /* TableViewControllerCitta.h */,
@@ -277,6 +282,7 @@
 			files = (
 				D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */,
 				D94B97401AC1BD9900755D2F /* Stato.m in Sources */,
+				D94B97431AC1C37900755D2F /* ViewControllerVisualizzatore.m in Sources */,
 				D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */,
 				D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */,
 				D9B16E641AC0A9EC000B71C0 /* TableViewControllerCitta.m in Sources */,
