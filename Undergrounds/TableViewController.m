@@ -81,6 +81,7 @@
     // Configure the cell...
     Stato *info = [ listaElementi objectAtIndex:indexPath.row];
     cell.textLabel.text = info.nome;
+    cell.imageView.image = [UIImage imageWithData:info.bandiera];
     //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",
                                 // info.city, info.state];
     NSLog(@"elemento %@", cell.textLabel.text);

@@ -1,0 +1,18 @@
+
+/* Class = "UITabBarItem"; title = "Underground"; ObjectID = "2H2-Hg-xje"; */
+"2H2-Hg-xje.title" = "Underground";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "8Ku-za-fFv"; */
+"8Ku-za-fFv.text" = "Title";
+
+/* Class = "UITableViewController"; title = "State"; ObjectID = "eV4-S2-ErS"; */
+"eV4-S2-ErS.title" = "State";
+
+/* Class = "UITableViewController"; title = "City"; ObjectID = "fbX-Lg-yqf"; */
+"fbX-Lg-yqf.title" = "City";
+
+/* Class = "UINavigationItem"; title = "Select a state..."; ObjectID = "hF2-qW-O0h"; */
+"hF2-qW-O0h.title" = "Select a state...";
+
+/* Class = "UINavigationItem"; title = "Select a city..."; ObjectID = "jtz-47-RkB"; */
+"jtz-47-RkB.title" = "Select a city...";
