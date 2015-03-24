@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Categoria" representedClassName="Categoria" syncable="YES">
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="listaMappe" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mappa" inverseName="categoria" inverseEntity="Mappa" syncable="YES"/>
     </entity>
     <entity name="Mappa" representedClassName="Mappa" syncable="YES">
         <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="file" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="orario" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="categoria" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categoria" inverseName="listaMappe" inverseEntity="Categoria" syncable="YES"/>
         <relationship name="stato" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Stato" inverseName="listaCitta" inverseEntity="Stato" syncable="YES"/>
     </entity>
     <entity name="Stato" representedClassName="Stato" syncable="YES">
+        <attribute name="bandiera" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="listaCitta" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mappa" inverseName="stato" inverseEntity="Mappa" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Categoria" positionX="108" positionY="-1449" width="128" height="73"/>
-        <element name="Mappa" positionX="331" positionY="-1332" width="128" height="118"/>
-        <element name="Stato" positionX="90" positionY="-1287" width="128" height="73"/>
+        <element name="Categoria" positionX="108" positionY="-1449" width="128" height="75"/>
+        <element name="Mappa" positionX="331" positionY="-1332" width="128" height="133"/>
+        <element name="Stato" positionX="90" positionY="-1287" width="128" height="88"/>
     </elements>
 </model>

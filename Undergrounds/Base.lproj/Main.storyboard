@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HQk-G9-U41">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HQk-G9-U41">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="8Ku-za-fFv" style="IBUITableViewCellStyleDefault" id="Xpz-qd-2fD">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellaStato" textLabel="8Ku-za-fFv" style="IBUITableViewCellStyleDefault" id="Xpz-qd-2fD">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xpz-qd-2fD" id="QBD-S2-cAd">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -46,7 +46,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="fbX-Lg-yqf" kind="show" id="AAy-vi-hPs"/>
+                                    <segue destination="fbX-Lg-yqf" kind="show" identifier="PassaStato" id="AAy-vi-hPs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,13 +64,13 @@
         <!--City-->
         <scene sceneID="eUL-Iz-Rvt">
             <objects>
-                <tableViewController title="City" id="fbX-Lg-yqf" sceneMemberID="viewController">
+                <tableViewController title="City" id="fbX-Lg-yqf" customClass="TableViewControllerCitta" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tVh-IV-Trt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OvL-8F-2NK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellaCitta" id="OvL-8F-2NK">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OvL-8F-2NK" id="PKm-E0-RsQ">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -82,6 +82,7 @@
                             <outlet property="delegate" destination="fbX-Lg-yqf" id="vzS-fJ-V1N"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="jtz-47-RkB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IsO-Ya-bip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

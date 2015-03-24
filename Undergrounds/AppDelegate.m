@@ -19,27 +19,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //------------INSERISCO ELEMENTO DI PROVA--------------------
-    NSManagedObjectContext *context = [self managedObjectContext]; //INSERIRE QUESTA RIGA PER INIZIALIZZARE
-    NSManagedObject *elementoProva = [NSEntityDescription insertNewObjectForEntityForName:@"Stato" inManagedObjectContext:context];
-    [elementoProva setValue:@"Great Britain" forKey:@"nome"];
-    NSSet *listaProva = [[NSSet alloc]init];
-    [elementoProva setValue:listaProva forKey:@"listaCitta"];
-    NSError *error;
-    if (![context save:&error]) {
-        NSLog(@"Ops , impossibile inserire l'elemento: %@", [error localizedDescription]);
-    }
+    //NSManagedObjectContext *context = [self managedObjectContext]; //INSERIRE QUESTA RIGA PER INIZIALIZZARE
+    //NSManagedObject *elementoProva = [NSEntityDescription insertNewObjectForEntityForName:@"Stato" inManagedObjectContext:context];
+//    [elementoProva setValue:@"Great Britain" forKey:@"nome"];
+//    NSSet *listaProva = [[NSSet alloc]init];
+//    [elementoProva setValue:listaProva forKey:@"listaCitta"];
+//    NSError *error;
+//    if (![context save:&error]) {
+//        NSLog(@"Ops , impossibile inserire l'elemento: %@", [error localizedDescription]);
+//    }
     
     //-----------VERIFICO GLI ELEMENTI PRESENTI NEL DATABASE--------------
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"Stato" inManagedObjectContext:context];
-    [fetchRequest setEntity:entity];
-    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
-    for (NSManagedObject *info in fetchedObjects) { //SCORRO IL RESULTSET
-        NSLog(@"Nome: %@", [info valueForKey:@"nome"] );
-        NSManagedObject *details = [info valueForKey:@"listaCitta"];
-        NSLog(@"listaCitta: %@", [details valueForKey:@"listaCitta"]);
-    }
+//    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+//    NSEntityDescription *entity = [NSEntityDescription
+//                                   entityForName:@"Stato" inManagedObjectContext:context];
+//    [fetchRequest setEntity:entity];
+//    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+//    for (NSManagedObject *info in fetchedObjects) { //SCORRO IL RESULTSET
+//        NSLog(@"Nome: %@", [info valueForKey:@"nome"] );
+//        NSManagedObject *details = [info valueForKey:@"listaCitta"];
+//        NSLog(@"listaCitta: %@", [details valueForKey:@"listaCitta"]);
+//    }
     return YES;
 }
 

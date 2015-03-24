@@ -1,48 +1,44 @@
 //
-//  TableViewController.m
+//  TableViewControllerCitta.m
 //  Undergrounds
 //
-//  Created by LORENZO SICILIANO on 22/03/15.
+//  Created by LORENZO SICILIANO on 23/03/15.
 //  Copyright (c) 2015 LORENZO SICILIANO. All rights reserved.
 //
 
-#import "TableViewController.h"
-#import "Stato.h"
-#import "AppDelegate.h"
 #import "TableViewControllerCitta.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
+#import "Mappa.h"
+#import "TableViewController.h"
 
 
-@interface TableViewController ()
+
+@interface TableViewControllerCitta ()
 
 @end
 
-@implementation TableViewController
 
-@synthesize managedObjectContext;
+
+@implementation TableViewControllerCitta
+
+@synthesize statoSelezionato;
 @synthesize listaElementi;
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     AppDelegate *delegate = (AppDelegate *)[[UIApplication
-                                            sharedApplication]delegate];
+                                             sharedApplication]delegate];
     self.managedObjectContext = delegate.managedObjectContext;
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"Stato" inManagedObjectContext:self.managedObjectContext];
+                                   entityForName:@"Mappa" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     NSError *error;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat: @"stato == %@", statoSelezionato];//QUI INSERISCO COME FILTRARE LA LISTA
+    [fetchRequest setPredicate:predicate];
     self.listaElementi = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    
+   
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -63,45 +59,29 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // CONTO IL NUMERO DEGLI ELEMENTI DELLA LISTA
+    // Return the number of rows in the section.
     return [listaElementi count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   
-    static NSString *CellIdentifier = @"CellaStato"; //INSERIRE QUESTA RIGA
-
+    
+    static NSString *CellIdentifier = @"CellaCitta"; //INSERIRE QUESTA RIGA
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-
+    
     // Configure the cell...
-    Stato *info = [ listaElementi objectAtIndex:indexPath.row];
+  Mappa *info = [ listaElementi objectAtIndex:indexPath.row];
     cell.textLabel.text = info.nome;
-    //cell.detailTextLabel.text = [NSString stringWithFormat:@"%@, %@",
-                                // info.city, info.state];
-    NSLog(@"elemento %@", cell.textLabel.text);
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",
+     info.nome];
+    //NSLog(@"elemento %@", cell.textLabel.text);
     return cell;
 }
-
-
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     if([segue.identifier isEqualToString:@"PassaStato"]){
-          NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow]; //PRENDO GLI INDICI
-        TableViewControllerCitta *destViewController = segue.destinationViewController; //INIZIALIZZO IL NUOVO CONTROLLER
-         destViewController.statoSelezionato = [listaElementi objectAtIndex:indexPath.row]; //COPIO L'ELEMENTO
-         //NEL NUOVO CONTROLLER
-     
-     }
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
 
 
 /*
@@ -138,5 +118,14 @@
 }
 */
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

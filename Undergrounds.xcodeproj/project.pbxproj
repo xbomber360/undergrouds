@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D94B973D1AC1BC0100755D2F /* Mappa.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B973C1AC1BC0100755D2F /* Mappa.m */; };
+		D94B97401AC1BD9900755D2F /* Stato.m in Sources */ = {isa = PBXBuildFile; fileRef = D94B973F1AC1BD9900755D2F /* Stato.m */; };
 		D98B6A051AB1E5F700450C53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A041AB1E5F700450C53 /* main.m */; };
 		D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A071AB1E5F700450C53 /* AppDelegate.m */; };
 		D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A0A1AB1E5F700450C53 /* ViewController.m */; };
@@ -14,12 +16,10 @@
 		D98B6A101AB1E5F700450C53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A0F1AB1E5F700450C53 /* Images.xcassets */; };
 		D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98B6A111AB1E5F700450C53 /* LaunchScreen.xib */; };
 		D98B6A1F1AB1E5F700450C53 /* UndergroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */; };
-		D98CF18F1AC0228A00B04212 /* Database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D98CF18E1AC0228A00B04212 /* Database.sqlite */; };
 		D998194F1ABD86F200A02AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998194E1ABD86F200A02AB9 /* CoreData.framework */; };
 		D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99819511ABD881700A02AB9 /* Model.xcdatamodeld */; };
+		D9B16E641AC0A9EC000B71C0 /* TableViewControllerCitta.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B16E631AC0A9EC000B71C0 /* TableViewControllerCitta.m */; };
 		D9F1AB8B1ABF2A9700F64338 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB8A1ABF2A9700F64338 /* Categoria.m */; };
-		D9F1AB8E1ABF2A9800F64338 /* Mappa.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB8D1ABF2A9800F64338 /* Mappa.m */; };
-		D9F1AB911ABF2A9800F64338 /* Stato.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB901ABF2A9800F64338 /* Stato.m */; };
 		D9F1AB9B1ABF455C00F64338 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB9A1ABF455C00F64338 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D94B973B1AC1BC0100755D2F /* Mappa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappa.h; sourceTree = "<group>"; };
+		D94B973C1AC1BC0100755D2F /* Mappa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappa.m; sourceTree = "<group>"; };
+		D94B973E1AC1BD9900755D2F /* Stato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stato.h; sourceTree = "<group>"; };
+		D94B973F1AC1BD9900755D2F /* Stato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stato.m; sourceTree = "<group>"; };
 		D98B69FF1AB1E5F700450C53 /* Undergrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Undergrounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B6A031AB1E5F700450C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98B6A041AB1E5F700450C53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,15 +51,12 @@
 		D98B6A181AB1E5F700450C53 /* UndergroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UndergroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98B6A1D1AB1E5F700450C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergroundsTests.m; sourceTree = "<group>"; };
-		D98CF18E1AC0228A00B04212 /* Database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database.sqlite; sourceTree = "<group>"; };
 		D998194E1ABD86F200A02AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D99819521ABD881700A02AB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		D9F1AB891ABF2A9700F64338 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
-		D9F1AB8A1ABF2A9700F64338 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
-		D9F1AB8C1ABF2A9800F64338 /* Mappa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappa.h; sourceTree = "<group>"; };
-		D9F1AB8D1ABF2A9800F64338 /* Mappa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mappa.m; sourceTree = "<group>"; };
-		D9F1AB8F1ABF2A9800F64338 /* Stato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stato.h; sourceTree = "<group>"; };
-		D9F1AB901ABF2A9800F64338 /* Stato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stato.m; sourceTree = "<group>"; };
+		D9B16E621AC0A9EC000B71C0 /* TableViewControllerCitta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerCitta.h; sourceTree = "<group>"; };
+		D9B16E631AC0A9EC000B71C0 /* TableViewControllerCitta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerCitta.m; sourceTree = "<group>"; };
+		D9F1AB891ABF2A9700F64338 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categoria.h; path = ../Categoria.h; sourceTree = "<group>"; };
+		D9F1AB8A1ABF2A9700F64338 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Categoria.m; path = ../Categoria.m; sourceTree = "<group>"; };
 		D9F1AB991ABF455C00F64338 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D9F1AB9A1ABF455C00F64338 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,14 +83,6 @@
 		D98B69F61AB1E5F700450C53 = {
 			isa = PBXGroup;
 			children = (
-				D98CF18E1AC0228A00B04212 /* Database.sqlite */,
-				D99819511ABD881700A02AB9 /* Model.xcdatamodeld */,
-				D9F1AB8F1ABF2A9800F64338 /* Stato.h */,
-				D9F1AB901ABF2A9800F64338 /* Stato.m */,
-				D9F1AB8C1ABF2A9800F64338 /* Mappa.h */,
-				D9F1AB8D1ABF2A9800F64338 /* Mappa.m */,
-				D9F1AB891ABF2A9700F64338 /* Categoria.h */,
-				D9F1AB8A1ABF2A9700F64338 /* Categoria.m */,
 				D98B6A011AB1E5F700450C53 /* Undergrounds */,
 				D98B6A1B1AB1E5F700450C53 /* UndergroundsTests */,
 				D98B6A001AB1E5F700450C53 /* Products */,
@@ -109,15 +102,14 @@
 		D98B6A011AB1E5F700450C53 /* Undergrounds */ = {
 			isa = PBXGroup;
 			children = (
-				D9F1AB991ABF455C00F64338 /* TableViewController.h */,
-				D9F1AB9A1ABF455C00F64338 /* TableViewController.m */,
+				D9B16E671AC0AA2B000B71C0 /* Grafica */,
+				D9B16E651AC0AA05000B71C0 /* Logica */,
 				D98B6A061AB1E5F700450C53 /* AppDelegate.h */,
 				D98B6A071AB1E5F700450C53 /* AppDelegate.m */,
-				D98B6A091AB1E5F700450C53 /* ViewController.h */,
-				D98B6A0A1AB1E5F700450C53 /* ViewController.m */,
 				D98B6A0C1AB1E5F700450C53 /* Main.storyboard */,
 				D98B6A0F1AB1E5F700450C53 /* Images.xcassets */,
 				D98B6A111AB1E5F700450C53 /* LaunchScreen.xib */,
+				D99819511ABD881700A02AB9 /* Model.xcdatamodeld */,
 				D98B6A021AB1E5F700450C53 /* Supporting Files */,
 			);
 			path = Undergrounds;
@@ -155,6 +147,32 @@
 				D998194E1ABD86F200A02AB9 /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9B16E651AC0AA05000B71C0 /* Logica */ = {
+			isa = PBXGroup;
+			children = (
+				D94B973B1AC1BC0100755D2F /* Mappa.h */,
+				D94B973C1AC1BC0100755D2F /* Mappa.m */,
+				D94B973E1AC1BD9900755D2F /* Stato.h */,
+				D94B973F1AC1BD9900755D2F /* Stato.m */,
+				D9F1AB891ABF2A9700F64338 /* Categoria.h */,
+				D9F1AB8A1ABF2A9700F64338 /* Categoria.m */,
+			);
+			name = Logica;
+			sourceTree = "<group>";
+		};
+		D9B16E671AC0AA2B000B71C0 /* Grafica */ = {
+			isa = PBXGroup;
+			children = (
+				D98B6A091AB1E5F700450C53 /* ViewController.h */,
+				D98B6A0A1AB1E5F700450C53 /* ViewController.m */,
+				D9B16E621AC0A9EC000B71C0 /* TableViewControllerCitta.h */,
+				D9B16E631AC0A9EC000B71C0 /* TableViewControllerCitta.m */,
+				D9F1AB991ABF455C00F64338 /* TableViewController.h */,
+				D9F1AB9A1ABF455C00F64338 /* TableViewController.m */,
+			);
+			name = Grafica;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D98CF18F1AC0228A00B04212 /* Database.sqlite in Resources */,
 				D98B6A0E1AB1E5F700450C53 /* Main.storyboard in Resources */,
 				D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */,
 				D98B6A101AB1E5F700450C53 /* Images.xcassets in Resources */,
@@ -259,11 +276,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98B6A0B1AB1E5F700450C53 /* ViewController.m in Sources */,
+				D94B97401AC1BD9900755D2F /* Stato.m in Sources */,
 				D98B6A081AB1E5F700450C53 /* AppDelegate.m in Sources */,
-				D9F1AB8E1ABF2A9800F64338 /* Mappa.m in Sources */,
 				D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */,
+				D9B16E641AC0A9EC000B71C0 /* TableViewControllerCitta.m in Sources */,
 				D9F1AB8B1ABF2A9700F64338 /* Categoria.m in Sources */,
-				D9F1AB911ABF2A9800F64338 /* Stato.m in Sources */,
+				D94B973D1AC1BC0100755D2F /* Mappa.m in Sources */,
 				D98B6A051AB1E5F700450C53 /* main.m in Sources */,
 				D9F1AB9B1ABF455C00F64338 /* TableViewController.m in Sources */,
 			);
@@ -478,7 +496,8 @@
 				D99819521ABD881700A02AB9 /* Model.xcdatamodel */,
 			);
 			currentVersion = D99819521ABD881700A02AB9 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
