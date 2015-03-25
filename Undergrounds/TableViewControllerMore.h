@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface TableViewControllerMore : UITableViewController
+
+@interface TableViewControllerMore : UITableViewController<MFMailComposeViewControllerDelegate>
+
+
+-(void) inviaEmail:(NSString *) tipo;
+-(void) recensisciApp;
+-(void) condividiSuFacebook;
+-(void) condividiSuTwitter;
 
 @end
