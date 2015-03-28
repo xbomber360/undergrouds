@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "1Cr-h7-Rxa"; */
+"1Cr-h7-Rxa.text" = "Version";
+
+/* Class = "UITabBarItem"; title = "Underground"; ObjectID = "2H2-Hg-xje"; */
+"2H2-Hg-xje.title" = "Underground";
+
+/* Class = "UILabel"; text = "Give me a Feedback"; ObjectID = "2Mk-JU-SIo"; */
+"2Mk-JU-SIo.text" = "Give me a Feedback";
+
+/* Class = "UILabel"; text = "Rate my app"; ObjectID = "5Wv-dD-KCT"; */
+"5Wv-dD-KCT.text" = "Rate my app";
+
+/* Class = "UILabel"; text = "Country"; ObjectID = "8Ku-za-fFv"; */
+"8Ku-za-fFv.text" = "Country";
+
+/* Class = "UILabel"; text = "Lorenzo Siciliano"; ObjectID = "Eo7-Ea-n2r"; */
+"Eo7-Ea-n2r.text" = "Lorenzo Siciliano";
+
+/* Class = "UINavigationController"; title = "Underground NavigationController"; ObjectID = "Org-cS-gCC"; */
+"Org-cS-gCC.title" = "Underground NavigationController";
+
+/* Class = "UILabel"; text = "1.0"; ObjectID = "Rb2-TB-dJL"; */
+"Rb2-TB-dJL.text" = "1.0";
+
+/* Class = "UILabel"; text = "Share my App"; ObjectID = "RkE-Vu-KSD"; */
+"RkE-Vu-KSD.text" = "Share my App";
+
+/* Class = "UINavigationItem"; title = "More..."; ObjectID = "add-FL-AIj"; */
+"add-FL-AIj.title" = "More...";
+
+/* Class = "UITableViewController"; title = "Country TableViewController"; ObjectID = "eV4-S2-ErS"; */
+"eV4-S2-ErS.title" = "Country TableViewController";
+
+/* Class = "UITableViewController"; title = "City TableViewController"; ObjectID = "fbX-Lg-yqf"; */
+"fbX-Lg-yqf.title" = "City TableViewController";
+
+/* Class = "UINavigationItem"; title = "Select a Country..."; ObjectID = "hF2-qW-O0h"; */
+"hF2-qW-O0h.title" = "Select a Country...";
+
+/* Class = "UILabel"; text = "Developer"; ObjectID = "jSQ-2k-DG5"; */
+"jSQ-2k-DG5.text" = "Developer";
+
+/* Class = "UINavigationItem"; title = "Select a City..."; ObjectID = "jtz-47-RkB"; */
+"jtz-47-RkB.title" = "Select a City...";
+
+/* Class = "UILabel"; text = "Do you want the map of your city?"; ObjectID = "mNN-KM-HuC"; */
+"mNN-KM-HuC.text" = "Do you want the map of your city?";
+
+/* Class = "UILabel"; text = "Term of use"; ObjectID = "ofy-NO-xnx"; */
+"ofy-NO-xnx.text" = "Term of use";
+
+/* Class = "UITableViewSection"; headerTitle = "Application info"; ObjectID = "rfn-aW-RVS"; */
+"rfn-aW-RVS.headerTitle" = "Application info";
+
+/* Class = "UITableViewController"; title = "More TableViewController"; ObjectID = "sxp-vB-h8a"; */
+"sxp-vB-h8a.title" = "More TableViewController";
+
+/* Class = "UITableViewSection"; headerTitle = "Feedback"; ObjectID = "tl8-DG-Ppe"; */
+"tl8-DG-Ppe.headerTitle" = "Feedback";
+
+/* Class = "UILabel"; text = "Term of Use"; ObjectID = "vcL-T8-bIe"; */
+"vcL-T8-bIe.text" = "Term of Use";
+
+/* Class = "UINavigationController"; title = "More NavigationController"; ObjectID = "ypF-Gz-UPz"; */
+"ypF-Gz-UPz.title" = "More NavigationController";
