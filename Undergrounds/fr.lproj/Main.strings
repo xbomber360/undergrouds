@@ -1,18 +1,18 @@
 
 /* Class = "UILabel"; text = "Version"; ObjectID = "1Cr-h7-Rxa"; */
-"1Cr-h7-Rxa.text" = "Versione";
+"1Cr-h7-Rxa.text" = "Version";
 
 /* Class = "UITabBarItem"; title = "Underground"; ObjectID = "2H2-Hg-xje"; */
-"2H2-Hg-xje.title" = "Undergrounds";
+"2H2-Hg-xje.title" = "Métro";
 
 /* Class = "UILabel"; text = "Give me a Feedback"; ObjectID = "2Mk-JU-SIo"; */
-"2Mk-JU-SIo.text" = "Dammi una tua opinione";
+"2Mk-JU-SIo.text" = "Donnez-moi un Commentaires";
 
 /* Class = "UILabel"; text = "Rate my app"; ObjectID = "5Wv-dD-KCT"; */
-"5Wv-dD-KCT.text" = "Vota la mia app";
+"5Wv-dD-KCT.text" = "Évaluer mon app";
 
 /* Class = "UILabel"; text = "Country"; ObjectID = "8Ku-za-fFv"; */
-"8Ku-za-fFv.text" = "Nazione";
+"8Ku-za-fFv.text" = "Pays";
 
 /* Class = "UILabel"; text = "Lorenzo Siciliano"; ObjectID = "Eo7-Ea-n2r"; */
 "Eo7-Ea-n2r.text" = "Lorenzo Siciliano";
@@ -24,10 +24,10 @@
 "Rb2-TB-dJL.text" = "1.0";
 
 /* Class = "UILabel"; text = "Share my App"; ObjectID = "RkE-Vu-KSD"; */
-"RkE-Vu-KSD.text" = "Condividi la mia App";
+"RkE-Vu-KSD.text" = "Partager ma App";
 
 /* Class = "UINavigationItem"; title = "More..."; ObjectID = "add-FL-AIj"; */
-"add-FL-AIj.title" = "Altro...";
+"add-FL-AIj.title" = "Autre...";
 
 /* Class = "UITableViewController"; title = "Country TableViewController"; ObjectID = "eV4-S2-ErS"; */
 "eV4-S2-ErS.title" = "Country TableViewController";
@@ -36,22 +36,22 @@
 "fbX-Lg-yqf.title" = "City TableViewController";
 
 /* Class = "UINavigationItem"; title = "Select a Country..."; ObjectID = "hF2-qW-O0h"; */
-"hF2-qW-O0h.title" = "Seleziona una nazione...";
+"hF2-qW-O0h.title" = "Choisissez un Pays...";
 
 /* Class = "UILabel"; text = "Developer"; ObjectID = "jSQ-2k-DG5"; */
 "jSQ-2k-DG5.text" = "Developer";
 
 /* Class = "UINavigationItem"; title = "Select a City..."; ObjectID = "jtz-47-RkB"; */
-"jtz-47-RkB.title" = "Seleziona una città...";
+"jtz-47-RkB.title" = "Choisissez une Ville...";
 
 /* Class = "UILabel"; text = "Do you want the map of your city?"; ObjectID = "mNN-KM-HuC"; */
-"mNN-KM-HuC.text" = "Desideri la mappa della tua città?";
+"mNN-KM-HuC.text" = "Voulez-vous la carte de votre ville?";
 
 /* Class = "UILabel"; text = "Term of use"; ObjectID = "ofy-NO-xnx"; */
-"ofy-NO-xnx.text" = "Termini di utilizzo";
+"ofy-NO-xnx.text" = "Terme d'utilisation";
 
 /* Class = "UITableViewSection"; headerTitle = "Application info"; ObjectID = "rfn-aW-RVS"; */
-"rfn-aW-RVS.headerTitle" = "Info Applicazione";
+"rfn-aW-RVS.headerTitle" = "Informations sur l'application";
 
 /* Class = "UITableViewController"; title = "More TableViewController"; ObjectID = "sxp-vB-h8a"; */
 "sxp-vB-h8a.title" = "More TableViewController";

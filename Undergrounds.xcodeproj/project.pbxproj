@@ -20,6 +20,7 @@
 		D98B6A1F1AB1E5F700450C53 /* UndergroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */; };
 		D998194F1ABD86F200A02AB9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D998194E1ABD86F200A02AB9 /* CoreData.framework */; };
 		D99819531ABD881700A02AB9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99819511ABD881700A02AB9 /* Model.xcdatamodeld */; };
+		D9A3982F1ACC328B00C3A289 /* ToDo.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D9A3982E1ACC328B00C3A289 /* ToDo.rtf */; };
 		D9B16E641AC0A9EC000B71C0 /* TableViewControllerCitta.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B16E631AC0A9EC000B71C0 /* TableViewControllerCitta.m */; };
 		D9F1AB8B1ABF2A9700F64338 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB8A1ABF2A9700F64338 /* Categoria.m */; };
 		D9F1AB9B1ABF455C00F64338 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F1AB9A1ABF455C00F64338 /* TableViewController.m */; };
@@ -37,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		D90FD8BA1AC5DB9B00D216C4 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		D923F70B1ACAAF6C00832DE6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		D923F70C1ACAAF7700832DE6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		D923F70D1ACAAF8500832DE6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		D92E47331AC21A9F0078D648 /* TableViewControllerMore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerMore.h; sourceTree = "<group>"; };
 		D92E47341AC21A9F0078D648 /* TableViewControllerMore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerMore.m; sourceTree = "<group>"; };
 		D94B973B1AC1BC0100755D2F /* Mappa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mappa.h; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 		D98B6A1E1AB1E5F700450C53 /* UndergroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergroundsTests.m; sourceTree = "<group>"; };
 		D998194E1ABD86F200A02AB9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D99819521ABD881700A02AB9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D9A3982E1ACC328B00C3A289 /* ToDo.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ToDo.rtf; sourceTree = "<group>"; };
 		D9B16E621AC0A9EC000B71C0 /* TableViewControllerCitta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewControllerCitta.h; sourceTree = "<group>"; };
 		D9B16E631AC0A9EC000B71C0 /* TableViewControllerCitta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewControllerCitta.m; sourceTree = "<group>"; };
 		D9F1AB891ABF2A9700F64338 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categoria.h; path = ../Categoria.h; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 		D98B69F61AB1E5F700450C53 = {
 			isa = PBXGroup;
 			children = (
+				D9A3982E1ACC328B00C3A289 /* ToDo.rtf */,
 				D98B6A011AB1E5F700450C53 /* Undergrounds */,
 				D98B6A1B1AB1E5F700450C53 /* UndergroundsTests */,
 				D98B6A001AB1E5F700450C53 /* Products */,
@@ -280,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A3982F1ACC328B00C3A289 /* ToDo.rtf in Resources */,
 				D9686B361AC5B61A001F752A /* Database.sqlite in Resources */,
 				D98B6A0E1AB1E5F700450C53 /* Main.storyboard in Resources */,
 				D98B6A131AB1E5F700450C53 /* LaunchScreen.xib in Resources */,
@@ -338,6 +345,9 @@
 			children = (
 				D98B6A0D1AB1E5F700450C53 /* Base */,
 				D90FD8BA1AC5DB9B00D216C4 /* it */,
+				D923F70B1ACAAF6C00832DE6 /* de */,
+				D923F70C1ACAAF7700832DE6 /* fr */,
+				D923F70D1ACAAF8500832DE6 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
